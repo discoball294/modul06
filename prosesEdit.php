@@ -19,7 +19,13 @@ $user = $_POST['userid'];
 $query = "SELECT * FROM user WHERE user LIKE '" . $user . "'";
 $data = mysqli_query($dbc, $query);
 $row = mysqli_fetch_assoc($data);
-
+if(mysqli_num_rows($data) == 0){
+    echo "<script>
+alert('Username tidak ada , silahkan isi kembali dengan username yang berbeda');
+window.location.href='edit.php';
+</script>";
+}
+else {
 
 ?>
 <form method="POST" action="prosesUpdate.php">
@@ -32,4 +38,4 @@ $row = mysqli_fetch_assoc($data);
     <input type="reset" value="Batal" class="btn btn-red">
 </form>
 </body>
-</html>
+</html><?}

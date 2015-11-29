@@ -7,6 +7,6 @@
 <body>
 <a href="daftar.php">Registrasi</a><br>
 <a href="edit.php">Koreksi Data</a>
-<a href="laporan.php">Laporan</a>
+<a href="tampil.php">Laporan</a>
 </body>
 </html>
