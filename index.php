@@ -6,7 +6,7 @@
 </head>
 <body>
 <a href="daftar.php">Registrasi</a><br>
-<a href="edit.php">Koreksi Data</a>
+<a href="edit.php">Koreksi Data</a><br>
 <a href="tampil.php">Laporan</a>
 </body>
 </html>
